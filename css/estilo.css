@@ -48,7 +48,12 @@ body{
 .titulo{
     text-align: center;
     padding: 40px ;
-    font-size: 40px;
+    font-size: 80px;  
+
+    /* animation: ; */
+
+    animation-name: cambiarcolor;
+    animation-duration: 4s;
 }
 
 .descripcion{
@@ -77,6 +82,27 @@ body{
     gap: 30px;
     padding: 50px 25px 10px 25px;
     width: 100%;
+}
+
+.contenedor__galeria::before{
+    content: Retratos;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0b2d1;
+    transform: scale(0);
+    transition: transform .4s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contenedor__galeria.hover::before{
+    transform: scale(1) rotate(360deg);
 }
 
 .galeria__1{
@@ -140,13 +166,6 @@ body{
     min-width: auto;
 }
 
-.retrato__1{
-    
-}
-
-.retrato__2{
-    
-}
 
 /** PAISAJES **/
 
@@ -483,6 +502,13 @@ body{
     }
   }
 
+
 @keyframes identifier {
-    
+     0%{
+         background-color: red;
+     }
+
+     100%{
+         background-color: green;
+     }
 }
