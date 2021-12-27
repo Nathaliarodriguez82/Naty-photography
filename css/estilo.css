@@ -48,12 +48,16 @@ body{
 .titulo{
     text-align: center;
     padding: 40px ;
-    font-size: 40px;
+    font-size: 40px;  
+
+    /* animation: ; */
+
+    animation-name: cambiarcolor;
+    animation-duration: 3s;
 }
 
 .descripcion{
     justify-content: center;
-    margin: auto;
     
 }
 
@@ -484,6 +488,15 @@ body{
     }
   }
 
+
+  
+
 @keyframes identifier {
-    
+     0%{
+         background-color: red;
+     }
+
+     100%{
+         background-color: green;
+     }
 }
