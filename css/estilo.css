@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color:#494847;
+}
+
+.header{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    border: 10px black solid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+
+.header__logo{
+    margin: 10px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.header__list{
+    list-style: none;
+    display: flex;
+    
+}
+
+.header__item{
+    color:white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    margin: 0px 3rem; 
+}
+
+.header__nav{
+    text-decoration: none;
+    color: black;
+}
+
+/** historia INDEX **/
+
+.titulo{
+    text-align: center;
+    padding: 40px ;
+    font-size: 40px;
+}
+
+.descripcion{
+    justify-content: center;
+    
+}
+
+.contenedor{
+    display: flex;
+    padding: 10px 25px 20px 25px;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+}
+
+/** section galeria INDEX **/
+
+.galeria{
+    object-fit: cover;
+}
+
+.contenedor__galeria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px 25px 10px 25px;
+    width: 100%;
+}
+
+.galeria__1{
+    padding: 10px 25px 10px 25px;
+}
+
+ 
+/** FOOTER **/
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 40px;
+    }
+    
+
+.contenedor__footer{
+    height: 50px;
+}
+
+
+.parrafo{
+    font-size: 20px;
+}
+
+/** HISTORIA **/
+
+
+.galeria__descripcion{
+    display: grid;
+    padding: 10px 25px 20px 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.foto__descripcion1{
+    padding: 10px 25px 20px 15px;;
+}
+
+
+/** RETRATOS **/
+
+.parrafo__retratos{
+    text-align: center;
+    padding: 10px 25px 40px 25px;
+    font-size: 35px;
+}
+
+.retratos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 10px 25px 20px 25px;
+    min-width: auto;
+}
+
+.retrato__1{
+    
+}
+
+.retrato__2{
+    
+}
+
+/** PAISAJES **/
+
+ 
+
+.section__paisajes{
+    display: block;
+    position: relative;
+    padding: 10px 25px 10px 25px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+
+.contenedor__paisajes{
+    flex: 25%;
+    justify-content:stretch;
+    padding: 5px;
+    gap: 1rem;
+
+    
+}
+
+.parrafo__paisajes{
+    text-align: center;
+    font-size: 35px;
+    margin: 70px;
+}
+
+.foto__paisaje{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    overflow: hidden;
+    padding: 10px 30px 30px 30px;
+    gap: 50px;
+}
+
+.foto__paisaje > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgb(0, 0, 0, .2);
+    
+}
+
+.foto__paisaje  a:hover img{
+    filter: blur(2px);
+    transform: rotate(5deg) scale(1.7);
+}
+
+
+.paisaje{
+    object-fit: cover;
+    height: 450px;
+}
+
+.galeria__paisajes{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) ;
+}
+
+.galeria__paisajes img{
+    width: 75vh;
+    max-height: 70vh;
+}
+
+/** CONTACTO **/
+
+.form{
+    width: 400px;
+    margin-top: 100%;
+    margin: auto;
+    border-radius: 4px;
+    color:black;
+}
+
+.nombree{
+    text-align: center;
+}
+
+.input{
+    background-color:white;
+    font-size: 20px;
+    
+}
+
+.buton{
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
+
+/** MEDIA QUERY **/
+/* DESKTOP */
+@media screen and (min-width: 940px) and (max-width: 1400px){
+    *{
+        width: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 40px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header__logo{
+        width: 400px;
+        height: 300px;
+    }
+
+    .galeria{
+        display: grid;
+    }
+
+    .contenedor__galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        overflow: hidden;
+    }
+
+    .galeria1{
+        width: 880px;
+        height: 670px;
+    }
+
+    .galeria__descripcion{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        overflow: hidden;
+    }
+
+    .foto__descripcion1{
+        width: 910px;
+        height: 730px;
+    }
+    
+    .retratos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        overflow: hidden;
+    }
+
+    .retrato__1{
+        width: 900px;
+        height: 700px;
+        margin: 4px;
+    }
+
+    .retrato__2{
+        width: 900px;
+        height: 900px;
+        margin: 4px;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 940px){
+    * {
+        background-color:red;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 40px;
+        text-decoration: none;
+        color: black
+    }
+
+    .header{
+        width: auto;
+    }
+
+    .descripcion{
+        width: auto;
+    }
+
+    .footer{
+        width: auto;
+    }
+
+    .header__logo{
+        width: 400px;
+        height: 300px;
+    }
+
+    .galeria{
+        display: grid;
+    }
+
+    .contenedor__galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        overflow: hidden;
+    }
+
+    .galeria1{
+        width: 700px;
+        height: 500px;
+    }
+
+    .retratos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        overflow: hidden;
+    }
+
+    .retrato__1{
+        width: 700px;
+        height: 600px;
+        margin: 4px;
+    }
+
+    .retrato__2{
+        width: 700px;
+        height: 600px;
+        margin: 4px;
+    }
+}
+/*media querie MOBILE*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    * {
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 20px;
+      text-decoration: none;
+      color: black
+    }
+
+    .imagen__descripcion{
+        width: 300px;
+        height: 200px;
+    }
+
+    .parrafo__descripcion{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .galeria{
+        display: grid;
+    }
+
+    .contenedor__galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        overflow: hidden;
+    }
+
+    .galeria1{
+        width: 270px;
+        height: 200px;
+    }
+
+    .galeria__descripcion{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        overflow: hidden;
+    }
+
+    .foto__descripcion1{
+        width: 300px;
+        height: 230px;
+    }
+
+    .parrafo__retratos{
+        font-size: 20px;
+    }
+
+    .retratos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        overflow: hidden;
+    }
+
+    .retrato__1{
+        width: 270px;
+        height: 240px;
+        margin: 4px;
+    }
+
+    .retrato__2{
+        width: 270px;
+        height: 240px;
+        margin: 4px;
+    }
+
+    .parrafo__paisajes{
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .foto__paisaje{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .paisaje{
+        width: 200px;
+        height: 200px;
+    }
+
+    .form{
+        overflow: hidden;
+        width: 300px;
+    }
+    .nombre{
+        overflow: hidden;
+    }
+
+    .nombree{
+        overflow: hidden;
+    }
+
+    .input{
+        overflow: hidden;
+    }
+
+    .buton{
+        overflow: hidden;
+    }
+  }
+
+@keyframes identifier {
+    
+}
