@@ -49,8 +49,8 @@ body{
     text-align: center;
     padding: 40px ;
     font-size: 40px;
-    animation:forwards 3s infinite;
-    transform: translateY(0);
+    animation: infinite 3s infinite ;
+    transform: translateY(50);
 }
 
 .descripcion{
@@ -475,9 +475,9 @@ body{
     }
   }
 
-@keyframes forwards{
+@keyframes infinite{
     from{
-        transform: translateY(0);
+        transform: translateY(50);
     }
     to{
         transform: translateY(100px);
