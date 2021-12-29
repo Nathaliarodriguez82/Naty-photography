@@ -480,6 +480,6 @@ body{
         transform: translateY(50);
     }
     to{
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
 }
