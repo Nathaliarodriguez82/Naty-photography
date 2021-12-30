@@ -21,6 +21,22 @@ body{
 
 /** historia INDEX **/
 
+.header{
+    padding: 10px 10px 10px 10px;
+    border: 10px black solid;
+}
+
+.header__logo{
+    margin: 10px;
+    width: 100px;
+    max-width: 100%;
+}
+
+.foto__descripcion{
+    overflow-x: hidden;
+    width: auto;
+}
+
 .titulo{
     text-align: center;
     padding: 40px ;
@@ -353,6 +369,10 @@ body{
     .imagen__descripcion{
         width: 300px;
         height: 200px;
+    }
+
+    .titulo{
+        font-size: 20px;
     }
 
     .parrafo__descripcion{
