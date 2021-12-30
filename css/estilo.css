@@ -8,6 +8,17 @@ body{
     background-color:#494847;
 }
 
+.header{
+    padding: 10px 10px 10px 10px;
+    border: 10px black solid;
+}
+
+.header__logo{
+    margin: 10px;
+    width: 100px;
+    max-width: 100%;
+}
+
 /** historia INDEX **/
 
 .titulo{
