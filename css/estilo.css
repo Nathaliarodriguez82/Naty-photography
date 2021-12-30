@@ -8,41 +8,6 @@ body{
     background-color:#494847;
 }
 
-.header{
-    display: flex;
-    padding: 10px 10px 10px 10px;
-    border: 10px black solid;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: hidden;
-    
-}
-
-.header__logo{
-    margin: 10px;
-    width: 100px;
-    max-width: 100%;
-}
-
-.header__list{
-    list-style: none;
-    display: flex;
-    
-}
-
-.header__item{
-    color:white;
-    text-decoration: none;
-    letter-spacing: 4px;
-    margin: 0px 3rem; 
-}
-
-.header__nav{
-    text-decoration: none;
-    color: black;
-}
-
 /** historia INDEX **/
 
 .titulo{
