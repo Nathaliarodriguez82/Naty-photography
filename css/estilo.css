@@ -11,26 +11,25 @@ body{
 .header{
     padding: 10px 10px 10px 10px;
     border: 10px black solid;
+
 }
 
 .header__logo{
     margin: 10px;
     width: 100px;
     max-width: 100%;
+}
+
+.hijo{
+    align-items: flex-end;
+}
+
+.nav{
+    font-size: 20px;
+    margin: 15px;
 }
 
 /** historia INDEX **/
-
-.header{
-    padding: 10px 10px 10px 10px;
-    border: 10px black solid;
-}
-
-.header__logo{
-    margin: 10px;
-    width: 100px;
-    max-width: 100%;
-}
 
 .foto__descripcion{
     overflow-x: hidden;
@@ -39,8 +38,9 @@ body{
 
 .titulo{
     text-align: center;
-    padding: 40px ;
+    padding: 10px 10px 40px 10px;
     font-size: 40px;
+    font-family:cursive ;
     animation: infinite 3s infinite ;
     transform: translateY(50);
 }
@@ -242,6 +242,7 @@ body{
         height: 300px;
     }
 
+
     .galeria{
         display: grid;
     }
@@ -301,6 +302,11 @@ body{
     .header{
         width: auto;
     }
+
+    .header__logo{
+        object-fit: cover;
+        margin: 10px 10px 15px 10px;
+   }
 
     .descripcion{
         width: auto;
