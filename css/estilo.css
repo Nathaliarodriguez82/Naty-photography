@@ -220,20 +220,9 @@ body{
     text-align: center;
 }
 
-.nombree{
-    text-align: center;
-}
-
-.input{
-    background-color:white;
-    font-size: 20px;
-    
-}
-
-.buton{
-    font-size: 30px;
-    text-align: center;
-    height: 100px;
+.items{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /** MEDIA QUERY **/
