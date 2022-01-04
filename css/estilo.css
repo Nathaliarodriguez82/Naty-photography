@@ -209,12 +209,14 @@ body{
 
 /** CONTACTO **/
 
-.form{
-    width: 400px;
-    margin-top: 100%;
-    margin: auto;
-    border-radius: 4px;
-    color:black;
+
+.formulario{
+    display: flexbox;
+}
+
+.formulario1{
+    justify-content: center;
+    align-items: center;
 }
 
 .nombree{

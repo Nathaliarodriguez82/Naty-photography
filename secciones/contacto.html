@@ -41,35 +41,30 @@
     <section class="section__contacto">
     <div class="contenedor__contacto">
         <h1 class="titulo">CONTACTO</h1>
-<main class="main">
-<form action="#" class="form">
-        <div class="nombre">
-        <input class="input" type="text" placeholder=" ESCRIBA SU NOMBRE"> <input:b>
+<main>
+    <form class="container">
+        <div class="formulario form-row">
+          <div class="formulario1 form-group col-none-md-6-lg-6">
+            <label>Nombre</label>
+            <input type="email" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="form-group col-none-md-6-lg-6">
+            <label>Apellido</label>
+            <input type="password" class="form-control" placeholder="Apellido">
+          </div>
         </div>
-        <div class="nombre">
-            <input class="input" type="NUMBER" placeholder="ESCRIBA SU NUMERO" ></input:b>
+        <div class="form-group col-none-md-6-lg-6">
+          <label for="inputAddress">Email</label>
+          <input type="text" class="form-control" placeholder="Email">
         </div>
-        <div class="nombre">
-            <input class="input" type="email" placeholder="ESCRIBA SU EMAIL" ></input:b>
-        </div>
-        <div class="nombre">
-            <textarea class="input" name="" id="" cols="30" rows="10" placeholder="DEJE UN MENSAJE"></textarea>
-        </div>
-        <div class="nombree">
-            <label class="label" for="sexo">SEXO</label>
-            <input class="input" type="radio" name="sexo" id="sexo" value="hombre"> HOMBRE
-            <input class="input" type="radio" name="sexo" id="sexo" value="mujer"> MUJER
-        </div>
-        <div class="nombree">
-            <label class="label" for="condiciones"> ACEPTA TERMINOS Y CONDICIONES</label>
-            <input class="input" type="checkbox" name=" terminos" id="condiciones" value="1">
-        </div>
-        <div class="buton">
-            <input class="buton1" type="submit" value="ENVIAR" >
-            <input class="buton1" type="reset" value="BORRAR CAMPO" ></input>
-        </div>
-</form>
-</main>
+        <div class="formulario1 form-group col-none-md-6-lg-6">
+            <textarea class="form-group col-none-md-6-lg-6" name="" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+          </div>
+          <div class="form-group col-none-md-6-lg-6">
+              <input class="form-group" type="submit" value="Enviar">
+          </div>
+    </form>
+    </main>
     </div>
     </section>
     <footer class="footer">
