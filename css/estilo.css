@@ -44,7 +44,7 @@ body{
     text-align: center;
     padding: 10px 10px 40px 10px;
     font-size: 40px;
-    font-family:cursive ;
+    font-family: bold;
     animation: infinite 3s infinite ;
     transform: translateY(50);
 }
