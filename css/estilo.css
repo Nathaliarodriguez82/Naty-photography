@@ -62,6 +62,10 @@ body{
     font-size: 30px;
 }
 
+.fotos__index{
+    object-fit: cover;
+}
+
 /** FOOTER **/
 
 .footer{
