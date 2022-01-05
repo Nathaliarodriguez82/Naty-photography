@@ -62,26 +62,6 @@ body{
     font-size: 30px;
 }
 
-/** section galeria INDEX **/
-
-.galeria{
-    object-fit: cover;
-}
-
-.contenedor__galeria{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    padding: 50px 25px 10px 25px;
-    width: 100%;
-}
-
-.galeria__1{
-    padding: 10px 25px 10px 25px;
-}
-
- 
 /** FOOTER **/
 
 .footer{
@@ -117,12 +97,15 @@ body{
     gap: 2rem;
 }
 
-.parrafo__descripcion{
-    
+.foto__descripcion1{
+    padding: 10px 25px 20px 15px;
 }
 
-.foto__descripcion1{
-    padding: 10px 25px 20px 15px;;
+.descripcion__historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 
