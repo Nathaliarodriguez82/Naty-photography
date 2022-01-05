@@ -119,10 +119,18 @@ body{
 
 .retratos{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    padding: 10px 25px 20px 25px;
-    min-width: auto;
+    grid-auto-rows: 200px ;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+}
+
+.retratos__item:{
+    grid-column: span1;
+}
+
+.retratos__item:{
+    grid-column: span2;
+    grid-row: span1;
 }
 
 /** PAISAJES **/
