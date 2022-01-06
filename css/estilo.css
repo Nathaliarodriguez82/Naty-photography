@@ -413,8 +413,12 @@ body{
         text-align: center;
     }
 
+    .foto__descripcion{
+        margin: 12px;
+    }
+
     .foto__descripcion1{
-        width: 300px;
+        width:300px;
         height: 230px;
     }
 
