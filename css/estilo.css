@@ -379,11 +379,21 @@ body{
         font-size: 20px;
     }
 
+    .descripcion{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .descripcion__historia{
+        font-size: 15px;
+    }
+
 
     .galeria__descripcion{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,1fr);
         overflow: hidden;
+        text-align: center;
     }
 
     .foto__descripcion1{
@@ -392,7 +402,7 @@ body{
     }
 
     .parrafo__retratos{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .retratos{
@@ -413,8 +423,9 @@ body{
         gap: 10px;
     }
 
-    .titulo{
-        font-size: 30px;
+
+    .descripcion{
+        font-size: 15px;
     }
 
     .descripcion__historia{
@@ -428,6 +439,10 @@ body{
 
     .paisajesss{
         display: flex;
+    }
+
+    .parrafo__paisajes{
+        font-size: 15px;
     }
 
     .form{
