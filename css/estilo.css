@@ -131,11 +131,34 @@ body{
     grid-auto-rows: 500px;
     padding: 20px;
     overflow: hidden;
+    gap: 1rem;
     
 }
 
 .retratos1:nth-child(1){
-    grid-column-start: span 1;
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.retratos1:nth-child(2){
+    grid-row-start: span 2;
+}
+
+.retratos1:nth-child(3){
+    grid-row-start: span 2;
+}
+
+.retratos1:nth-child(4){
+    grid-row-start: span 2;
+}
+
+.retratos1:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.retratos1:nth-child(6){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
 }
 
 
@@ -336,37 +359,8 @@ body{
     }
 
 
-    .galeria{
-        display: grid;
-    }
-
-    .contenedor__galeria{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        overflow: hidden;
-    }
-
-    .galeria1{
-        width: 700px;
-        height: 500px;
-    }
-
     .retratos{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
-        overflow: hidden;
-    }
-
-    .retrato__1{
-        width: 700px;
-        height: 600px;
-        margin: 4px;
-    }
-
-    .retrato__2{
-        width: 700px;
-        height: 600px;
-        margin: 4px;
+        display: flex;
     }
 }
 /*media querie MOBILE*/
@@ -397,25 +391,6 @@ body{
         font-size: 20px;
     }
 
-    .parrafo__descripcion{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .galeria{
-        display: grid;
-    }
-
-    .contenedor__galeria{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        overflow: hidden;
-    }
-
-    .galeria1{
-        width: 270px;
-        height: 200px;
-    }
 
     .galeria__descripcion{
         grid-template-columns: 1fr;
@@ -433,22 +408,10 @@ body{
     }
 
     .retratos{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
-        overflow: hidden;
+        display: flex;
     }
 
-    .retrato__1{
-        width: 270px;
-        height: 240px;
-        margin: 4px;
-    }
 
-    .retrato__2{
-        width: 270px;
-        height: 240px;
-        margin: 4px;
-    }
 
     .parrafo__paisajes{
         font-size: 20px;
