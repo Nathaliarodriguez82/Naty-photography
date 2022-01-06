@@ -513,3 +513,8 @@ body{
 .parrafo__paisajes::selection{
     background: darkslategrey;
 }
+
+.obligatorio::after{
+    content: "*";
+    color: red;
+}
