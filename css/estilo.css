@@ -339,7 +339,24 @@ body{
    }
 
     .descripcion{
-        width: auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .descripcion__historia{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .parrafo__retratos{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .parrafo__paisajes{
+        font-size: 25px;
+        text-align: center;
     }
 
     .footer{
