@@ -26,12 +26,12 @@ body{
 
 .nav{
     font-size: 20px;
-    padding: 20px;
+    padding: 40px;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    
 }
+
 
 /** historia INDEX **/
 
@@ -494,4 +494,22 @@ body{
     to{
         transform: translateY(30px);
     }
+}
+
+/* Pseudoelementos */
+
+.descripcion::selection{
+    background:darkslategrey;
+}
+
+.descripcion__historia::selection{
+    background: darkslategrey;
+}
+
+.parrafo__retratos::selection{
+    background: darkslategrey;
+}
+
+.parrafo__paisajes::selection{
+    background: darkslategrey;
 }
