@@ -1,0 +1,84 @@
+@import"./parciales/header";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color:#494847;
+}
+
+.header{
+    padding: 10px 10px 10px 10px;
+    border: 10px black solid;
+
+    &__logo{
+    margin: 10px;
+    width: 100px;
+    max-width: 100%;
+    }
+
+    &__link{
+        font-size: 20px;
+        padding: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/** historia INDEX **/
+
+.foto__descripcion{
+    overflow-x: hidden;
+    width: auto;
+  }
+  
+  .titulo{
+    text-align: center;
+    padding: 10px 10px 40px 10px;
+    font-size: 40px;
+    font-family: bold;
+    animation: infinite 3s infinite ;
+    transform: translateY(50);
+  }
+  
+  .descripcion{
+    justify-content: center;
+    
+  }
+  
+  .contenedor{
+    display: flex;
+    padding: 10px 25px 20px 5px;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  .fotos__index{
+    object-fit: cover;
+  }
+  
+  /** FOOTER **/
+  
+  .footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 40px;
+    
+    &__contenedor{
+        height: 50px;}
+    
+}
+  
+.parrafo{
+    font-size: 20px;
+  }
