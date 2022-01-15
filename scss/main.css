@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: red !important;
-}
-
 .header {
   padding: 10px 10px 10px 10px;
   border: 10px black solid;
@@ -20,19 +9,111 @@ body {
   max-width: 100%;
 }
 
-.nav {
+.header__link {
   font-size: 20px;
   padding: 40px;
   font-weight: bold;
   text-decoration: none;
-  color: white !important;
+  color: white;
 }
 
-.container-fluid {
-  width: 100%;
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  padding-right: var(--bs-gutter-x, 0.75rem);
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.footer__contenedor {
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #494847;
+}
+
+/** historia INDEX **/
+.foto__descripcion {
+  overflow-x: hidden;
+  width: auto;
+}
+
+.titulo {
+  text-align: center;
+  padding: 10px 10px 40px 10px;
+  font-size: 40px;
+  font-family: bold;
+  -webkit-animation: infinite 3s infinite;
+          animation: infinite 3s infinite;
+  -webkit-transform: translateY(50);
+          transform: translateY(50);
+}
+
+.descripcion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 25px 20px 5px;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+.fotos__index {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/** FOOTER **/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.footer__contenedor {
+  height: 50px;
+}
+
+.parrafo {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
