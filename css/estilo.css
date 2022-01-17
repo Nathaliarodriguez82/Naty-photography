@@ -31,14 +31,40 @@
   grid-template-rows: repeat(2, 1fr);
   flex-wrap: wrap;
   gap: 2rem; }
-  .galeria__descripcion__descripcion1 {
+  .galeria__descripcion1 {
     padding: 10px 25px 20px 15px; }
-  .galeria__descripcion__historia {
-    display: flex;
+
+.retratos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden; }
+  .retratos__item {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.formulario {
+  display: flexbox; }
+  .formulario1 {
     justify-content: center;
     align-items: center;
-    font-size: 30px; }
+    text-align: center; }
 
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 940px) {
+  .header {
+    width: auto; }
+    .header__logo {
+      object-fit: cover;
+      margin: 10px 10px 15px 10px;
+      width: 150px;
+      height: 100px; }
+    .header__link {
+      align-items: center; } }
+
+/*media querie MOBILE*/
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +94,7 @@ body {
   padding: 10px 25px 20px 5px;
   gap: 20px;
   align-items: center;
-  font-size: 30px; }
+  font-size: font-size 30px; }
 
 .fotos__index {
   object-fit: cover; }
@@ -82,391 +108,180 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px; }
+  font-size: font-size 30px; }
 
-  /** RETRATOS **/
+/** RETRATOS **/
+.retratoss {
+  padding: 20px; }
 
-.retratoss{
-  padding: 20px;
-}
-
-.parrafo__retratos{
+.parrafo__retratos {
   text-align: center;
   padding: 10px 25px 40px 25px;
-  font-size: 35px;
-}
-
-.retratos{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 500px;
-  padding: 20px;
-  overflow: hidden;
-  
-}
-
-.retratos1:nth-child(1){
-  grid-column-start: span 1;
-}
-
-
-.retratos__item{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
+  font-size: 35px; }
 
 /** PAISAJES **/
-
-.paisajes__section{
+.paisajes__section {
   display: block;
   position: relative;
   padding: 10px 25px 10px 25px;
   flex-wrap: wrap;
-  overflow: hidden;
-  
-}
+  overflow: hidden; }
 
-.paisajes__contenedor{
+.paisajes__contenedor {
   flex: 25%;
-  justify-content:stretch;
+  justify-content: stretch;
   padding: 5px;
-  gap: 1rem;
+  gap: 1rem; }
 
-  
-}
-
-.paisajes__parrafo{
+.paisajes__parrafo {
   text-align: center;
   font-size: 35px;
-  margin: 70px;
-}
+  margin: 70px; }
 
-.foto__paisaje{
+.paisajesss {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2,1fr);
-  overflow: hidden;
-  padding: 10px 30px 30px 30px;
-  gap: 50px;
-}
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden; }
 
-.foto__paisaje > a{
-  display: block;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 2px rgb(0, 0, 0, .2);
-  
-}
-
-.foto__paisaje  a:hover img{
-  filter: blur(2px);
-  transform: rotate(5deg) scale(1.7);
-}
-
-
-.paisaje{
-  object-fit: cover;
-  height: 450px;
-}
-
-.galeria__paisajes{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,.5);
+.paisajes__item {
+  padding: 20px;
   width: 100%;
-  height: 100vh;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0) ;
-}
-
-.galeria__paisajes img{
-  width: 75vh;
-  max-height: 70vh;
-}
+  height: 95%;
+  object-fit: cover; }
 
 /** CONTACTO **/
-
-
-.formulario{
-  display: flexbox;
-}
-
-.formulario1{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.items{
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+.items {
+  font-size: font-size 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 /** MEDIA QUERY **/
 /* DESKTOP */
-@media screen and (min-width: 940px) and (max-width: 1400px){
-  *{
-      width: auto;
-      flex-direction: column;
-      justify-content: space-between;
-      font-size: 40px;
-      text-decoration: none;
-      color: black;
-  }
-
-  .header__logo{
-      width: 400px;
-      height: 300px;
-  }
-
-
-  .galeria{
-      display: grid;
-  }
-
-  .contenedor__galeria{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4,1fr);
-      overflow: hidden;
-  }
-
-  .galeria1{
-      width: 880px;
-      height: 670px;
-  }
-
-  .galeria__descripcion{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4,1fr);
-      overflow: hidden;
-  }
-
-  .foto__descripcion1{
-      width: 910px;
-      height: 730px;
-  }
-  
-  .retratos{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,1fr);
-      overflow: hidden;
-  }
-
-  .retrato__1{
-      width: 900px;
-      height: 700px;
-      margin: 4px;
-  }
-
-  .retrato__2{
-      width: 900px;
-      height: 900px;
-      margin: 4px;
-  }
-}
+@media screen and (min-width: 940px) and (max-width: 1400px) {
+  * {
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 40px;
+    text-decoration: none;
+    color: black; }
+  .header__logo {
+    width: 400px;
+    height: 300px; }
+  .galeria {
+    display: grid; }
+  .contenedor__galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden; }
+  .galeria1 {
+    width: 880px;
+    height: 670px; }
+  .galeria__descripcion {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden; }
+  .foto__descripcion1 {
+    width: 910px;
+    height: 730px; }
+  .retratos {
+    display: flex; } }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 940px){
+@media screen and (min-width: 768px) and (max-width: 940px) {
   * {
-      width: auto;
-      flex-direction: column;
-      justify-content: space-between;
-      font-size: 40px;
-      text-decoration: none;
-      color: black
-  }
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 40px;
+    text-decoration: none;
+    color: black; }
+  .descripcion {
+    width: auto;
+    font-size: font-size 30px;
+    text-align: center; }
+  .footer {
+    width: auto; }
+  .galeria {
+    display: grid; }
+  .contenedor__galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden; }
+  .galeria1 {
+    width: 700px;
+    height: 500px; } }
 
-  .header{
-      width: auto;
-  }
-
-  .header__logo{
-      object-fit: cover;
-      margin: 10px 10px 15px 10px;
-      width: 150px;
-      height: 100px;
- }
-
- .nav{
-     align-items: center;
- }
-
-  .descripcion{
-      width: auto;
-  }
-
-  .footer{
-      width: auto;
-  }
-
-
-  .galeria{
-      display: grid;
-  }
-
-  .contenedor__galeria{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4,1fr);
-      overflow: hidden;
-  }
-
-  .galeria1{
-      width: 700px;
-      height: 500px;
-  }
-
-  .retratos{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,1fr);
-      overflow: hidden;
-  }
-
-  .retrato__1{
-      width: 700px;
-      height: 600px;
-      margin: 4px;
-  }
-
-  .retrato__2{
-      width: 700px;
-      height: 600px;
-      margin: 4px;
-  }
-}
 /*media querie MOBILE*/
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px) {
   * {
     flex-direction: column;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: font-size 20px;
     text-decoration: none;
-    color: black
-  }
+    color: black; }
+  .header__logo {
+    width: 80px;
+    height: 60px; }
+  .header__link {
+    font-size: 15px;
+    align-items: center; }
+  .imagen__descripcion {
+    width: 300px;
+    height: 200px; }
+  .titulo {
+    font-size: font-size 20px; }
+  .parrafo__descripcion {
+    font-size: font-size 20px;
+    text-align: center; }
+  .galeria {
+    display: grid; }
+  .contenedor__galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden; }
+  .galeria1 {
+    width: 270px;
+    height: 200px; }
+  .galeria__descripcion {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden; }
+  .foto__descripcion1 {
+    width: 300px;
+    height: 230px; }
+  .parrafo__retratos {
+    font-size: font-size 20px; }
+  .parrafo__paisajes {
+    font-size: font-size 20px;
+    margin: 20px; }
+  .foto__paisaje {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    gap: 10px; }
+  .titulo {
+    font-size: font-size 30px; }
+  .paisajesss {
+    display: flex; }
+  .paisajes__contenedor {
+    padding: 1px; }
+  .paisajes__parrafo {
+    font-size: font-size 20px; }
+  .form {
+    overflow: hidden;
+    width: 300px; }
+  .nombre {
+    overflow: hidden; }
+  .nombree {
+    overflow: hidden; }
+  .input {
+    overflow: hidden; }
+  .buton {
+    overflow: hidden; } }
 
-  .header__logo{
-      width: 80px;
-      height: 60px;
-  }
-  .nav{
-      font-size: 15px;
-      align-items: center;
-  }
-
-  .imagen__descripcion{
-      width: 300px;
-      height: 200px;
-  }
-
-  .titulo{
-      font-size: 20px;
-  }
-
-  .parrafo__descripcion{
-      font-size: 20px;
-      text-align: center;
-  }
-
-  .galeria{
-      display: grid;
-  }
-
-  .contenedor__galeria{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4,1fr);
-      overflow: hidden;
-  }
-
-  .galeria1{
-      width: 270px;
-      height: 200px;
-  }
-
-  .galeria__descripcion{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4,1fr);
-      overflow: hidden;
-  }
-
-  .foto__descripcion1{
-      width: 300px;
-      height: 230px;
-  }
-
-  .parrafo__retratos{
-      font-size: 20px;
-  }
-
-  .retratos{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,1fr);
-      overflow: hidden;
-  }
-
-  .retrato__1{
-      width: 270px;
-      height: 240px;
-      margin: 4px;
-  }
-
-  .retrato__2{
-      width: 270px;
-      height: 240px;
-      margin: 4px;
-  }
-
-  .parrafo__paisajes{
-      font-size: 20px;
-      margin: 20px;
-  }
-
-  .foto__paisaje{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,1fr);
-      overflow: hidden;
-      gap: 10px;
-  }
-
-  .titulo{
-      font-size: 30px;
-  }
-
-  .paisaje{
-      width: 200px;
-      height: 200px;
-  }
-
-  .form{
-      overflow: hidden;
-      width: 300px;
-  }
-  .nombre{
-      overflow: hidden;
-  }
-
-  .nombree{
-      overflow: hidden;
-  }
-
-  .input{
-      overflow: hidden;
-  }
-
-  .buton{
-      overflow: hidden;
-  }
-}
-
-@keyframes infinite{
-  from{
-      transform: translateY(50);
-  }
-  to{
-      transform: translateY(30px);
-  }
-}
+@keyframes infinite {
+  from {
+    transform: translateY(50); }
+  to {
+    transform: translateY(30px); } }
