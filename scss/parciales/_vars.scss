@@ -1,3 +1,13 @@
 $color-body: black;
 $tamaño-fuente: font-size 30px;
 $tamaño-fuente-20px: font-size 20px;
+
+$palette: map-merge(
+    (
+    color-body: black,
+    body: #494847,
+    headerlink: white, 
+    ),
+    $palette
+    );
+
