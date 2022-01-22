@@ -58,11 +58,15 @@ body{
   /** HISTORIA **/@at-root
 
 .galeria__historia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@include centrado
     font-size: $tamaño-fuente;
-  }
+}
+
+@mixin centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   /** RETRATOS **/@at-root
 

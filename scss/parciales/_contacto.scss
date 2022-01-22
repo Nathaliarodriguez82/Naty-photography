@@ -1,10 +1,8 @@
 .formulario{
-    display: flexbox;
+    display: flex;
 
     &1{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-  }
-  
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
