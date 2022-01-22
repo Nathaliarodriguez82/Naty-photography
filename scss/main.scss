@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: map-get($palette, body);
+    background-color:  #494847;
 }
 
 /** historia INDEX **/
@@ -69,11 +69,16 @@ body{
   .retratoss{
     padding: 20px;
   }
-  
+
+  $style:(
+    aling: center,
+    size: 35px,
+  );
+
   .parrafo__retratos{
-    text-align: center;
+    text-align: map-get($style, aling);
     padding: 10px 25px 40px 25px;
-    font-size: 35px;
+    font-size: map-get($style, size);
   }
 
   /** PAISAJES **/
@@ -181,7 +186,7 @@ body{
       justify-content: space-between;
       font-size: 40px;
       text-decoration: none;
-      color: map-get($palette, color-body )
+      color:  #494847
   }
 
   .descripcion{
@@ -332,4 +337,3 @@ body{
       transform: translateY(30px);
   }
 }
-

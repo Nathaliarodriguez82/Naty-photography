@@ -43,9 +43,9 @@
   display: -ms-grid;
   display: grid;
   padding: 10px 25px 20px 15px;
-  -ms-grid-columns: (1fr)2;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)2;
+  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -59,9 +59,9 @@
 .retratos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)2;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)2;
+  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
 }
@@ -219,9 +219,9 @@ body {
 .paisajesss {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)3;
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)2;
+  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
 }
@@ -267,7 +267,7 @@ body {
   .contenedor__galeria {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)4;
+    -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     overflow: hidden;
   }
@@ -278,7 +278,7 @@ body {
   .galeria__descripcion {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)4;
+    -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     overflow: hidden;
   }
@@ -306,7 +306,7 @@ body {
             justify-content: space-between;
     font-size: 40px;
     text-decoration: none;
-    color: black;
+    color: #494847;
   }
   .descripcion {
     width: auto;
@@ -323,7 +323,7 @@ body {
   .contenedor__galeria {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)4;
+    -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     overflow: hidden;
   }
@@ -375,7 +375,7 @@ body {
   .contenedor__galeria {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)4;
+    -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     overflow: hidden;
   }
@@ -386,7 +386,7 @@ body {
   .galeria__descripcion {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)4;
+    -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
     overflow: hidden;
   }
@@ -404,7 +404,7 @@ body {
   .foto__paisaje {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)6;
+    -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
     overflow: hidden;
     gap: 10px;
