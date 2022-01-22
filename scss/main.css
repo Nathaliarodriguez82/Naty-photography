@@ -183,7 +183,7 @@ body {
   padding: 20px;
 }
 
-.parrafo__retratos {
+.paisajes__parrafo {
   text-align: center;
   padding: 10px 25px 40px 25px;
   font-size: 35px;
@@ -208,12 +208,6 @@ body {
           justify-content: stretch;
   padding: 5px;
   gap: 1rem;
-}
-
-.paisajes__parrafo {
-  text-align: center;
-  font-size: 35px;
-  margin: 70px;
 }
 
 .paisajesss {
@@ -427,16 +421,7 @@ body {
     overflow: hidden;
     width: 300px;
   }
-  .nombre {
-    overflow: hidden;
-  }
-  .nombree {
-    overflow: hidden;
-  }
-  .input {
-    overflow: hidden;
-  }
-  .buton {
+  .nombree, .input, .buton {
     overflow: hidden;
   }
 }

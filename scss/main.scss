@@ -75,7 +75,7 @@ body{
     size: 35px,
   );
 
-  .parrafo__retratos{
+  %parrafo__retratos{
     text-align: map-get($style, aling);
     padding: 10px 25px 40px 25px;
     font-size: map-get($style, size);
@@ -102,9 +102,7 @@ body{
 }
 
 .paisajes__parrafo{
-  text-align: center;
-  font-size: 35px;
-  margin: 70px;
+  @extend %parrafo__retratos;
 }
 
 .paisajesss{
@@ -312,20 +310,20 @@ body{
       overflow: hidden;
       width: 300px;
   }
-  .nombre{
+  %nombre{
       overflow: hidden;
   }
 
   .nombree{
-      overflow: hidden;
+      @extend %nombre;
   }
 
   .input{
-      overflow: hidden;
+    @extend %nombre;
   }
 
   .buton{
-      overflow: hidden;
+      @extend %nombre;
   }
 }
 
