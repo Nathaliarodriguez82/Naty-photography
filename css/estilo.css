@@ -12,6 +12,19 @@
     text-decoration: none;
     color: white; }
 
+.retratoindex{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row: 1fr;
+  padding: 40px 20px 20px 20px;
+  gap: 30px;
+}
+  .retratoindex__items{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -94,7 +107,7 @@ body {
   padding: 10px 25px 20px 5px;
   gap: 20px;
   align-items: center;
-  font-size: font-size 30px; }
+  font-size: 30px; }
 
 .fotos__index {
   object-fit: cover; }
@@ -108,13 +121,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: font-size 30px; }
+  font-size: 30px; }
 
 /** RETRATOS **/
 .retratoss {
   padding: 20px; }
-
-.paisajes__parrafo {
+.parrafo__retratos {
   text-align: center;
   padding: 10px 25px 40px 25px;
   font-size: 35px; }
@@ -133,21 +145,28 @@ body {
   padding: 5px;
   gap: 1rem; }
 
-.paisajesss {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  overflow: hidden; }
+.paisajes__parrafo {
+  text-align: center;
+  font-size: 35px;
+  margin: 70px; }
 
-.paisajes__item {
-  padding: 20px;
-  width: 100%;
-  height: 95%;
-  object-fit: cover; }
+  .paisajesss{
+    display: grid;      
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+  }
+  
+  .paisajes__item{
+      padding: 20px;
+      width: 100%;
+      height: 95%;
+      object-fit:cover;
+  }
 
 /** CONTACTO **/
 .items {
-  font-size: font-size 20px;
+  font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 /** MEDIA QUERY **/
@@ -190,10 +209,10 @@ body {
     justify-content: space-between;
     font-size: 40px;
     text-decoration: none;
-    color: #494847; }
+    color: black; }
   .descripcion {
     width: auto;
-    font-size: font-size 30px;
+    font-size: 30px;
     text-align: center; }
   .footer {
     width: auto; }
@@ -212,7 +231,7 @@ body {
   * {
     flex-direction: column;
     justify-content: space-between;
-    font-size: font-size 20px;
+    font-size: 20px;
     text-decoration: none;
     color: black; }
   .header__logo {
@@ -225,9 +244,9 @@ body {
     width: 300px;
     height: 200px; }
   .titulo {
-    font-size: font-size 20px; }
+    font-size: 20px; }
   .parrafo__descripcion {
-    font-size: font-size 20px;
+    font-size: 20px;
     text-align: center; }
   .galeria {
     display: grid; }
@@ -246,9 +265,9 @@ body {
     width: 300px;
     height: 230px; }
   .parrafo__retratos {
-    font-size: font-size 20px; }
+    font-size: 20px; }
   .parrafo__paisajes {
-    font-size: font-size 20px;
+    font-size: 20px;
     margin: 20px; }
   .foto__paisaje {
     grid-template-columns: 1fr;
@@ -256,17 +275,17 @@ body {
     overflow: hidden;
     gap: 10px; }
   .titulo {
-    font-size: font-size 30px; }
-  .paisajesss {
-    display: flex; }
-  .paisajes__contenedor {
-    padding: 1px; }
-  .paisajes__parrafo {
-    font-size: font-size 20px; }
+    font-size: 30px; }
   .form {
     overflow: hidden;
     width: 300px; }
-  .nombree, .input, .buton {
+  .nombre {
+    overflow: hidden; }
+  .nombree {
+    overflow: hidden; }
+  .input {
+    overflow: hidden; }
+  .buton {
     overflow: hidden; } }
 
 @keyframes infinite {
