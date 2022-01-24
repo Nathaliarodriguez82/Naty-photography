@@ -50,18 +50,11 @@ body{
   .fotos__index{
     object-fit: cover;
   }
-  
-  /** FOOTER **/
-  
-.parrafo{
-    font-size: 20px;
-  }
-
   /** HISTORIA **/@at-root
 
 .galeria__historia{
 @include centrado
-    font-size: $tamaño-fuente;
+    font-size: 30px;
 }
 
 @mixin centrado{
