@@ -250,6 +250,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     overflow: hidden; }
+  .galeria__historia{
+    font-size: 20px;
+    text-align: center;}
   .galeria1 {
     width: 270px;
     height: 200px; }
